@@ -176,24 +176,22 @@
 												<option th:each="p:${TrainerList}" th:text="${p.nom}" />
 											</select>
 										</div>
-										<div class="form-group col-md-3">
+										
 											
-											<div class="controls input-append date form_date col-md-12" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input1" data-link-format="yyyy-mm-dd" style="margin-top: -6px;">
-				                
-								                <!-- <span class="add-on" style="float: right;"><i class="fa fa-times fa-lg"></i></span> -->
-								                
-								                
-								                <div class="row">
-								                	<div class="col-sm-12" >
-								                	<input name="Date"  placeholder="By Date" size="16" type="text" id="from" class="form-control" readonly required="required" style="color: black;background-color: #fff;height: 45px;"/>
-								                	</div >
-								                	<div class="add-on col-sm-3" style="position:relative;z-index: 999;margin-top: -38px;margin-left: 185px;">
-								                	<i class="fa fa-calendar fa-lg"> </i>
-								                	</div>
-								                </div>
-								              </div>
-								              <input type="hidden" id="dtp_input1" value="" /><br/>
-										</div>
+											<div class="form-group col-md-3"  style="margin-top: -10px;width: 100%;">
+								<select  class="form-control w-100" name="Category" required="required" >
+										<option value="default">Select a Category</option>
+										<option value="Development">Development</option>
+										<option value="Programmation">Programmation</option>
+										<option value="Finance & Comptability">Finance & Comptability</option>
+										<option value="Electronics">Electronics</option>
+										<option value="Personal Development">Personal Development</option>
+										<option value="Management">Management</option>
+										<option value="Innovation">Innovation</option>
+								</select>	
+						
+							</div>
+								            
 										<div class="form-group col-md-3">
 											<select  class="w-100 form-control mt-lg-1 mt-md-2" name="Location" required="required" >
 													<option value="default">Select a location</option>
